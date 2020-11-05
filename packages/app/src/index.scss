@@ -1,0 +1,112 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    background-color: #fbf7f3;
+    font-family: Walkway Semibold,serif;
+}
+
+h1, h2 {
+    font-family: Mak;
+    font-weight: normal;
+    display: block;
+}
+
+h1 {
+    font-size: 14vw;
+    line-height: 30vh;
+}
+
+h2 {
+    font-size: 11vw;
+    white-space: nowrap;
+    margin-left: 5%;
+    padding-bottom: 0;
+    margin-block-end: 0px;
+
+    &.small {
+        font-size: 4vw;
+        margin: 4vw 0;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+
+    &:after {
+        content: '';
+        border-bottom: 1px solid;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        position: absolute;
+        transition: width .25s ease-in-out;
+    }
+
+    &:hover:after {
+        width: 0%;
+    }
+
+    &.reverse {
+        &:after {
+            width: 0%;
+        }
+    
+        &:hover:after {
+            width: 100%;
+        }
+    }
+}
+
+p {
+    font-size: 1.85rem;
+    line-height: 1.9em;
+    font-weight: 400;
+}
+
+.force-block {
+    display: block;
+}
+
+.center-section {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.full-width {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 19vw;
+        line-height: 23.5vh;
+    }
+
+    h2 {
+        font-size: 12vw;
+        margin-left: 0;
+    }
+
+    .center-section {
+        width: 75%;
+    }
+}

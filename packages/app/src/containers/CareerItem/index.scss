@@ -1,0 +1,78 @@
+.career-item {
+  position: relative;
+  padding: 45px 0;
+  height: 270px;
+  box-sizing: border-box;
+
+  h3 {
+    font-size: 5.5vw;
+    font-family: Mak,serif;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+
+  p {
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+
+  .index {
+    font-size: 5.5vw;
+    font-weight: 400;
+    font-family: Mak,serif;
+    text-align: right;
+    position: absolute;
+    top: 55px;
+    right: 0;
+  }
+
+  img {
+    width: 0;
+    height: 180px;
+    position: absolute;
+    right: 130px;
+    top: 45px;
+    transition: width 0.3s ease-out;
+  }
+
+  &:hover img {
+    width: 180px;
+  }
+}
+
+@media (max-width: 800px) {
+  .career-item {
+    position: relative;
+    padding: 45px 0;
+    height: 230px;
+    box-sizing: border-box;
+    
+    img {
+      width: 0;
+      height: 100px;
+      right: 75px;
+      top: 80px;
+    }
+
+    &:hover img {
+      width: 100px;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .career-item {
+    img {
+      width: 0;
+      height: 100px;
+      right: 90px;
+      top: 45px;
+    }
+
+    &:hover img {
+      width: 100px;
+    }
+  }
+}
